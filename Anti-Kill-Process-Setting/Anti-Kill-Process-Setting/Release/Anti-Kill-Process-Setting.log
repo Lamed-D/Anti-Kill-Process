@@ -1,0 +1,9 @@
+﻿  소스.c
+C:\Users\Lamed\source\repos\Anti-Kill-Process-Setting\Anti-Kill-Process-Setting\소스.c(26,40): warning C4020: 'malloc': 실제 매개 변수가 너무 많습니다.
+C:\Users\Lamed\source\repos\Anti-Kill-Process-Setting\Anti-Kill-Process-Setting\소스.c(38,1): warning C4133: '초기화 중': 'char *'과(와) 'int *' 사이의 형식이 호환되지 않습니다.
+C:\Users\Lamed\source\repos\Anti-Kill-Process-Setting\Anti-Kill-Process-Setting\소스.c(32,10): warning C4101: 'ProcessID_char' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다.
+  Previous IPDB not found, fall back to full compilation.
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  Anti-Kill-Process-Setting.vcxproj -> C:\Users\Lamed\source\repos\Anti-Kill-Process-Setting\Release\Anti-Kill-Process-Setting.exe
