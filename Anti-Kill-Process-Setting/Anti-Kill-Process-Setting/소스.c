@@ -61,13 +61,14 @@ int main()
     GetCurrentDirectoryA(255, CurrentDirectory);
     char BATFileName_String[30];
     sprintf(BATFileName_String, "%s%s%s", "Anti-Kill-Process_", ProcessID_String, ".bat");
-    char BATFileName_BUF[500];
-    sprintf(BATFileName_BUF, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    char BATFileName_BUF[800];
+    sprintf(BATFileName_BUF, "@echo off\n%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s\npause",
         "sc create ",
         "Anti-Kill-Process_",
         ProcessID_String,
         " binpath= \"",
         CurrentDirectory,
+        "\\Anti-Kill-Process_",
         ProcessID_String,
         ".sys\"",
         " displayname= \"Anti-Kill-Process_",
@@ -95,7 +96,7 @@ int main()
         printf("Error Open4\n");
         system("pause");
     }
-    sprintf(BATFileName2_BUF, "sc stop %s%s", "Kill Anti-Kill-Process_", ProcessID_String);
+    sprintf(BATFileName2_BUF, "@echo off\nsc stop %s%s\npause", "Anti-Kill-Process_", ProcessID_String);
     fputs(BATFileName2_BUF, fp);
     fclose(fp);
     free(read_buf);
